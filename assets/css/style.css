@@ -1,9 +1,37 @@
 /* HEADER */
+header{
+    background-color: var(--trasparent-element);
+    height: 80px;
+    padding: 0 20px;
+}
 
+img{
+    height: 50px;
+}
 /* MAIN */
+main{
+    width: 100%;
+    height: calc(100vh - 180px);
+}
+/* aside */
+aside{
+    width: 200px;
+    background-color: var(--black-col);
+    height: calc(100vh - 180px);
+}
+/* home */
+
+.home{
+    width: calc(100% - 200px);
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
 
 /* FOOTER */
-
+footer{
+    background-color: var(--footer-col);
+    height: 100px;
+}
 /* SOLUZIONI RESPONSIVE */
 /* first step medium  */
 

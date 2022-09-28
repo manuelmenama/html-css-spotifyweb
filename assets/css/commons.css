@@ -1,4 +1,4 @@
-:root{
+:root {
     /* text & object */
     --text-col: #a3a3a3;
     --text-active-col: #fff;
@@ -10,6 +10,7 @@
     --main-col: #141922;
     --footer-col: #282828;
     --black-col: #000000;
+    --trasparent-element: rgba(0,0,0,.5);
 }
 
 /* GENERAL */
@@ -21,9 +22,49 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: 'Montserrat', sans-serif;
-    color: #a3a3a3;
+    font-size: 0.8rem;
+    color: var(--text-col);
+    background-color: var(--main-col);
+}
+
+img{
+    max-width: 100%;
 }
 
 /* UTILITIES */
+/* debug */
+.debug{
+    background-color: rgba(255,0,0,.5);
+    border: 1px solid black;
+}
+
+/* LAYOUT */
+.d-flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+/* UI */
+.button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--object-col-white);
+    border: 1px solid var(--object-col-white);
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 20px;
+    line-height: 40px;
+}
