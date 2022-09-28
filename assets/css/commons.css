@@ -53,11 +53,15 @@ img{
     align-items: center;
 }
 
+.flex-direction-col{
+    flex-direction: column;
+}
+
+
 /* PADDING */
 .padding-top-80{
     padding-top: 80px;
 }
-
 
 /* UI */
 .button{
@@ -73,10 +77,29 @@ img{
     line-height: 40px;
 }
 
+.ul-style-remove{
+    list-style: none;
+}
+
+.a-style-remove{
+    text-decoration: none;
+    color: var(--text-col);
+}
+
+
+
 /* VARIATION */
 header img:first-child{
     filter: invert(100%);
     width: 30px;
     height: auto;
     display: none;
+}
+
+.resize-icon{
+    transform: scale(0.6);
+}
+
+.filter-img-icon{
+    filter: brightness(70%);
 }
