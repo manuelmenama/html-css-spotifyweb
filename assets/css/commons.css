@@ -53,14 +53,11 @@ img{
     align-items: center;
 }
 
-/* margin */
+/* PADDING */
 .padding-top-80{
     padding-top: 80px;
 }
 
-/* .margin-bottom-100{
-    margin-top: 100px;
-} */
 
 /* UI */
 .button{
@@ -74,4 +71,12 @@ img{
     padding: 0 30px;
     border-radius: 20px;
     line-height: 40px;
+}
+
+/* VARIATION */
+header img:first-child{
+    filter: invert(100%);
+    width: 30px;
+    height: auto;
+    display: none;
 }

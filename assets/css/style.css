@@ -41,3 +41,24 @@ footer{
 /* second step small */
 
 /* third step smaller */
+@media screen and (max-width: 600px) {
+    /* header */
+    header{
+        padding: 0 20px 0 10px;
+    }
+    header img:first-child{
+        display: inline-block;
+    }
+
+    header img:nth-child(2){
+        display: none;
+    }
+
+    /* aside */
+    aside{
+        width: 50px;
+    }
+    .home{
+        width: calc(100% - 50px);
+    }
+}
