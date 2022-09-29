@@ -93,11 +93,11 @@ img{
 
 /* ROUNDED IMAGE */
 .rounded-img{
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     object-fit: scale-down;
     background-color: var(--object-col-gray);
-    border-radius: 50%;
+    border-radius: 25px;
 }
 
 /* VARIATION */

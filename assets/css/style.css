@@ -24,7 +24,7 @@ aside{
     width: 200px;
     background-color: var(--black-col);
     height: calc(100vh - 100px);
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 aside nav.top{
@@ -53,6 +53,14 @@ aside .last-nav{
     height: 100%;
 }
 
+aside .last-nav .install{
+    margin-left: -16px;
+}
+
+/* aside .last-nav .user{
+    margin-left: -7px;
+} */
+
 /* home */
 
 .home{
@@ -77,8 +85,10 @@ footer{
     header{
         padding: 0 20px 0 10px;
     }
+
     header img:first-child{
         display: inline-block;
+        padding-left: 5px;
     }
 
     header img:nth-child(2){
@@ -87,9 +97,29 @@ footer{
 
     /* aside */
     aside{
-        width: 50px;
+        width: 60px;
     }
+
+    aside nav ul li a{
+        display: none;
+    }
+
+    aside nav h3{
+        display: none;
+    }
+
+    aside nav:nth-child(2) div:nth-child(2){
+        display: none;
+    }
+
+    aside nav span.aside-text{
+        display: none;
+    }
+
+    /* home */
     .home{
         width: calc(100% - 50px);
     }
+
+
 }
