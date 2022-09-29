@@ -60,10 +60,26 @@ aside .last-nav .install{
 /* home */
 
 .home{
-    width: calc(100% - 200px);
+    width: calc(100vw - 200px);
     height: calc(100vh - 100px);
     overflow: auto;
 }
+
+.home .home-menu ul{
+    gap: 20px;
+    font-size: 0.8rem;
+    padding: 15px 0;
+}
+
+.home .recently-played .row{
+    gap: 10px;
+}
+
+.home .recently-played .card{
+    width: calc(100% / 6 - 10px);
+    min-width: 110px;
+}
+
 
 /* FOOTER */
 footer{
@@ -80,7 +96,10 @@ footer .now-playing{
 footer .now-playing .card-img{
     width: 80%;
     gap: 8px;
+    min-width: 60px;
+    overflow: hidden;
 }
+
 
 footer .now-playing .card-img img{
     transform: scale(0.9);
@@ -104,6 +123,7 @@ footer .playing-control{
     width: 50%;
     height: 100%;
     color: var(--object-col-white);
+    padding: 0 5px;
 }
 
 footer .playing-control .control-button{
@@ -119,6 +139,9 @@ footer .playing-control .control-button > i:not(i:nth-child(3)){
     font-size: 1.2rem;
 }
 
+footer .playing-control .control-time div:nth-child(odd){
+    font-size: 0.65rem;
+}
 footer .varius-control{
     width: 200px;
     height: 100%;

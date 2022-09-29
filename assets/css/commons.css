@@ -32,6 +32,11 @@ body{
     font-weight: 600;
 }
 
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
 img{
     max-width: 100%;
 }
@@ -112,6 +117,14 @@ img{
     width: 30%;
     background-color: var(--object-col-active);
     border-radius: 2px;
+}
+
+
+.album-img{
+    width: calc(100%);
+    height: auto;
+    min-width: 100px;
+    max-width: 150px;
 }
 
 /* UI VARIATION */
