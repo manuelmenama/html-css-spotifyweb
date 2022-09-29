@@ -95,21 +95,50 @@
     </main>
 
     <footer class="d-flex space-between">
-        <div class="now-playing debug">
-            <div class="card-img"></div>
-            <div class="like-stuff"></div>
+        <div class="now-playing d-flex align-center">
+            <div class="card-img d-flex align-center">
+                <img src="assets/img/sinister.jpeg" alt="sinister-cover">
+                <div>
+                    <p class="artist-name">Sinister</p>
+                    <p class="song-name">Nome brano</p>
+                </div>
+            </div>
+            <div class="like-stuff d-flex align-center flex-wrap jus-flex-endr">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
         </div>
-        <div class="playing-control debug">
-            <div class="control-button"></div>
-            <div class="time-played"></div>
-            <div class="time-bar"></div>
-            <div class="time-left"></div>
+        <div class="playing-control d-flex flex-direction-col debug">
+            <div class="control-button d-flex align-center jus-flex-center debug">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="control-time d-flex align-center space-between">
+                <div class="time-played">0:35</div>
+                <div class="empty-bar adaptive-bar">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="time-left">3:15</div>
+            </div>
         </div>
-        <div class="varius-control debug">
-            <div class="queue-icon"></div>
-            <div class="device-icon"></div>
-            <div class="volume-icon"></div>
-            <div class="volume-bar"></div>
+        <div class="varius-control d-flex align-center space-between">
+            <div class="queue-icon">
+                <i class="fa-solid fa-list-ul"></i>
+            </div>
+            <div class="device-icon">
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div class="volume-icon">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="volume-bar">
+                <div class="empty-bar">
+                    <div class="fill-bar"></div>
+                </div>
+            </div>
         </div>
     </footer>
     

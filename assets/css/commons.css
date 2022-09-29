@@ -4,6 +4,7 @@
     --text-active-col: #fff;
     --object-col-white: #fff;
     --object-col-gray: #a3a3a3;
+    --bar-color-empty: #5a5a5a;
     /* active element */
     --object-col-active: #d2d2d2;
     --element-active: #c0ff31;
@@ -63,6 +64,14 @@ img{
     justify-content: flex-end;
 }
 
+.jus-flex-center{
+    justify-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 /* PADDING */
 .padding-top-80{
     padding-top: 80px;
@@ -89,6 +98,25 @@ img{
 .a-style-remove{
     text-decoration: none;
     color: var(--text-col);
+}
+
+.empty-bar{
+    height: 4px;
+    width: 100px;
+    background-color: var(--bar-color-empty);
+    border-radius: 2px;
+}
+
+.fill-bar{
+    height: 4px;
+    width: 30%;
+    background-color: var(--object-col-active);
+    border-radius: 2px;
+}
+
+/* UI VARIATION */
+.adaptive-bar{
+    width: 80%;
 }
 
 /* ROUNDED IMAGE */

@@ -74,16 +74,59 @@ footer{
 footer .now-playing{
     width: 200px;
     height: 100%;
+    padding: 0 10px;
+}
+
+footer .now-playing .card-img{
+    width: 80%;
+    gap: 8px;
+}
+
+footer .now-playing .card-img img{
+    transform: scale(0.9);
+}
+
+footer .now-playing .artist-name{
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+footer .now-playing .song-name{
+    font-size: 0.65rem;
+}
+
+footer .now-playing .like-stuff{
+    width: 20%;
+    gap: 5px;
 }
 
 footer .playing-control{
     width: 50%;
     height: 100%;
+    color: var(--object-col-white);
+}
+
+footer .playing-control .control-button{
+    gap: 20px;
+    padding: 10px 0;
+}
+
+footer .playing-control .control-button .fa-circle-play{
+    font-size: 2rem;
+}
+
+footer .playing-control .control-button > i:not(i:nth-child(3)){
+    font-size: 1.2rem;
 }
 
 footer .varius-control{
-    width: 250px;
+    width: 200px;
     height: 100%;
+    padding-right: 10px;
+}
+
+footer .varius-control > div{
+    padding-right: 2px;
 }
 /* SOLUZIONI RESPONSIVE */
 /* first step medium  */
