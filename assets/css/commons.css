@@ -171,6 +171,30 @@ a:hover{
     cursor: pointer;
 }
 
+.active-left::before{
+    content: '';
+    border-left: 3px solid var(--element-active);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 30px;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.active-bottom::before{
+    content: '';
+    border-bottom: 3px solid var(--element-active);
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    left: calc(100% / 2 - 35% / 2);
+    width: 35%;
+}
+
 /* EFFETTO CARD IN STYLE.CSS */
 
 /* VARIATION */

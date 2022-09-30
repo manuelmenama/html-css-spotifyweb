@@ -48,7 +48,7 @@ aside nav.bottom ul li{
 
 aside nav.bottom h3{
     color: var(--text-white-col);
-    margin-bottom: 15px;
+    margin: 20px 0;
 }
 
 aside nav.bottom > div i{
@@ -264,6 +264,10 @@ footer .varius-control > div{
         width: 60px;
     }
 
+    aside  nav.top span{
+        display: none;
+    }
+
     aside nav ul li a{
         display: none;
     }
@@ -277,6 +281,10 @@ footer .varius-control > div{
     }
 
     aside nav span.aside-text{
+        display: none;
+    }
+
+    aside .user a{
         display: none;
     }
 
