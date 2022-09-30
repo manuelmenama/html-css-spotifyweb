@@ -123,8 +123,6 @@ img{
 .album-img{
     width: calc(100%);
     height: auto;
-    min-width: 100px;
-    max-width: 150px;
 }
 
 /* UI VARIATION */
