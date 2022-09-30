@@ -22,7 +22,7 @@
     <header class="d-flex space-between align-center">
         <img src="assets/img/favicon.ico" alt="minilogo">
         <img src="assets/img/logo.svg" alt="logo">
-        <a class="button" href="#">
+        <a class="button button-effect" href="#">
             EFFETTUA L'UPGRADE
         </a>
     </header>
@@ -31,25 +31,33 @@
         <aside class="padding-top-80 d-flex flex-direction-col">
             <nav class="top">
                 <ul class="ul-style-remove">
-                    <li class="d-flex align-center">
-                        <img class="filter-img-icon resize-icon" src="assets/img/home.svg" alt="">
-                        <a class="a-style-remove" href="#">Home</a>
+                    <li>
+                        <a class="a-style-remove d-flex align-center" href="#">
+                            <img class="filter-img-icon resize-icon" src="assets/img/home.svg" alt="">
+                            Home
+                        </a>
                     </li>
-                    <li class="d-flex align-center">
-                        <img class="filter-img-icon resize-icon" src="assets/img/search.svg" alt="">
-                        <a class="a-style-remove" href="#">Cerca</a>
+                    <li>
+                        <a class="a-style-remove d-flex align-center" href="#">
+                            <img class="filter-img-icon resize-icon" src="assets/img/search.svg" alt="">
+                            Cerca
+                        </a>
                     </li>
-                    <li class="d-flex align-center">
-                        <img class="filter-img-icon resize-icon" src="assets/img/libreria.svg" alt="">
-                        <a class="a-style-remove" href="#">La tua libreria</a>
+                    <li>
+                        <a class="a-style-remove d-flex align-center" href="#">
+                            <img class="filter-img-icon resize-icon" src="assets/img/libreria.svg" alt="">
+                            La tua libreria
+                        </a>
                     </li>
                 </ul>
             </nav>
             <nav class="bottom">
                 <h3>PLAYLIST</h3>
-                <div class="d-flex align-center">
-                    <i class="fa-solid fa-square-plus fa-3x"></i>
-                    <a class="a-style-remove" href="#">Crea playlist</a>
+                <div>
+                    <a class="a-style-remove d-flex align-center" href="#">
+                        <i class="fa-solid fa-square-plus fa-3x"></i>
+                        Crea playlist
+                    </a>
                 </div>
                 <ul class="ul-style-remove">
                     <li>
@@ -77,13 +85,13 @@
             </nav>
             <nav class="last-nav d-flex flex-direction-col jus-flex-end">
                 <div class="aside-bottom">
-                    <div class="install d-flex align-center">
+                    <a class="install d-flex align-center">
                         <img class="filter-img-icon resize-icon-04" src="assets/img/download.svg" alt="dwl icon">
                         <span class="aside-text">Installa app</span>
-                    </div>
+                    </a>
                     <div class="user d-flex align-center">
                         <img class="filter-img-icon rounded-img" src="assets/img/profile.svg" alt="profile image">
-                        <span class="aside-text">Scooby Doo</span>
+                        <a class="aside-text">Scooby Doo</a>
                     </div>
                 </div>
             </nav>
@@ -119,42 +127,60 @@
 
                 <div class="row d-flex flex-wrap">
                     <div class="card">
-                        <img class="album-img" src="assets/img/metal_lifting.jpg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/metal_lifting.jpg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Heavy Metal</p>
                             <p>Subtitle</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/stranger.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/stranger.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</p>
                             <p>Kyle Dikson & Michael Stain</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/aquietplace.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/aquietplace.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>A quiet place</p>
                             <p>Subtitle</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/split.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/split.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Split</p>
                             <p>Subtitle</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/cure.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/cure.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>A cure for wellness</p>
                             <p>Subtitle</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/sinister.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/sinister.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Sinister</p>
                             <p>Subtitle</p>
@@ -167,14 +193,21 @@
                 <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
                 <div class="row d-flex flex-wrap">
                     <div class="card">
-                        <img class="album-img" src="assets/img/radar.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/radar.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
+                        
                         <div class="text">
                             <p>Relase Radar</p>
                             <p>Subtitle</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img" src="assets/img/mixdaily.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img" src="assets/img/mixdaily.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Daily Mix 1</p>
                             <p>Subtitle</p>
@@ -187,13 +220,19 @@
                 <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
                 <div class="row d-flex flex-wrap">
                     <div class="card">
-                        <img class="album-img rounded-img-big" src="assets/img/youg.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img rounded-img-big" src="assets/img/youg.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Lana Del Rey</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="album-img rounded-img-big" src="assets/img/einaudi.jpeg" alt="metal albums">
+                        <div class="position">
+                            <img class="album-img rounded-img-big" src="assets/img/einaudi.jpeg" alt="metal albums">
+                            <i class="fa-regular fa-circle-play fa-5x"></i>
+                        </div>
                         <div class="text">
                             <p>Ludovico Einaudi</p>
                         </div>
@@ -211,21 +250,21 @@
                 <img src="assets/img/sinister.jpeg" alt="sinister-cover">
                 <div>
                     <p class="artist-name">Sinister</p>
-                    <p class="song-name">Nome brano</p>
+                    <a href="#" class="song-name a-style-remove">Nome brano</a>
                 </div>
             </div>
             <div class="like-stuff d-flex align-center flex-wrap jus-flex-endr">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart hover-effect"></i>
+                <i class="fa-regular fa-folder hover-effect"></i>
             </div>
         </div>
         <div class="playing-control d-flex flex-direction-col">
             <div class="control-button d-flex align-center jus-flex-center">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
+                <i class="fa-solid fa-shuffle cursor-pointer"></i>
+                <i class="fa-solid fa-backward-step cursor-pointer"></i>
+                <i class="fa-regular fa-circle-play button-effect"></i>
+                <i class="fa-solid fa-forward-step cursor-pointer"></i>
+                <i class="fa-solid fa-rotate-right cursor-pointer"></i>
             </div>
             <div class="control-time d-flex align-center space-between">
                 <div class="time-played">0:35</div>
@@ -236,13 +275,13 @@
             </div>
         </div>
         <div class="varius-control d-flex align-center space-between">
-            <div class="queue-icon">
+            <div class="queue-icon hover-effect">
                 <i class="fa-solid fa-list-ul"></i>
             </div>
-            <div class="device-icon">
+            <div class="device-icon hover-effect">
                 <i class="fa-solid fa-desktop"></i>
             </div>
-            <div class="volume-icon">
+            <div class="volume-icon hover-effect">
                 <i class="fa-solid fa-volume-high"></i>
             </div>
             <div class="volume-bar">

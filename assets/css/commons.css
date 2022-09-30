@@ -123,6 +123,7 @@ img{
 .album-img{
     width: calc(100%);
     height: auto;
+    cursor: pointer;
 }
 
 .card{
@@ -150,6 +151,27 @@ img{
     background-color: var(--object-col-gray);
     border-radius: 25px;
 }
+
+/* EFFECT */
+a:hover{
+    filter: brightness(300%);
+}
+
+.hover-effect:hover{
+    filter: brightness(300%);
+    cursor: pointer;
+}
+
+.button-effect:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+
+/* EFFETTO CARD IN STYLE.CSS */
 
 /* VARIATION */
 header img:first-child{

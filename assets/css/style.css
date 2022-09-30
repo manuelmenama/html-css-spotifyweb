@@ -51,8 +51,8 @@ aside nav.bottom h3{
     margin-bottom: 15px;
 }
 
-aside nav.bottom div:nth-child(2) a{
-    padding-left: 15px;
+aside nav.bottom > div i{
+    padding-right: 8px;
 }
 
 aside .last-nav{
@@ -61,15 +61,20 @@ aside .last-nav{
 }
 
 aside .last-nav .install{
+    height: 40%;
     margin-left: -16px;
+    cursor: pointer;
 }
 
 aside .user .aside-text{
     padding-left: 9px;
+    cursor: pointer;
 }
 
 aside .user{
     position: relative;
+    margin-top: 10px;
+    height: 60%;
 }
 
 aside .user::before{
@@ -113,6 +118,27 @@ aside .user::before{
     gap: 20px;
     font-size: 0.7rem;
     padding: 25px 0;
+}
+
+.home .position{
+    position: relative;
+}
+
+.home .position i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-white-col);
+    display: none;
+}
+
+.card img:hover{
+    filter: brightness(60%);
+}
+
+.card img:hover + i{
+    display: inline-block;
 }
 
 .home .card p{
