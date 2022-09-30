@@ -9,14 +9,18 @@ header{
     z-index: 999;
 }
 
-img{
-    height: 50px;
+header img{
+    height: 40px;
 }
 /* MAIN */
 main{
     width: 100%;
     height: calc(100vh - 100px);
     overflow: hidden;
+}
+
+main img{
+    width: 50px;
 }
 
 /* aside */
@@ -26,6 +30,7 @@ aside{
     height: calc(100vh - 100px);
     padding: 0 15px;
 }
+
 
 aside nav.top{
     margin: 0 -12px;
@@ -42,6 +47,7 @@ aside nav.bottom ul li{
 }
 
 aside nav.bottom h3{
+    color: var(--text-white-col);
     margin-bottom: 15px;
 }
 
@@ -51,10 +57,29 @@ aside nav.bottom div:nth-child(2) a{
 
 aside .last-nav{
     height: 100%;
+    padding-bottom: 10px;
 }
 
 aside .last-nav .install{
     margin-left: -16px;
+}
+
+aside .user .aside-text{
+    padding-left: 9px;
+}
+
+aside .user{
+    position: relative;
+}
+
+aside .user::before{
+    content: '';
+    border-top: 1px solid var(--object-col-gray);
+    display: inline-block;
+    width: 90%;
+    position: absolute;
+    top: -10px;
+    left: 0;
 }
 
 /* home */
@@ -65,28 +90,50 @@ aside .last-nav .install{
     overflow: auto;
 }
 
+.home h2{
+    color: var(--text-white-col);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.home > div > p{
+    padding-left: 5px;
+}
+
+.home > div .row{
+    margin: 30px 0;
+}
+
+.home > div p:nth-child(2){
+    margin-bottom: 20px;
+}
+
 .home .home-menu ul{
     gap: 20px;
-    font-size: 0.8rem;
-    padding: 15px 0;
+    font-size: 0.7rem;
+    padding: 25px 0;
 }
 
-.home .recently-played .row{
-    gap: 10px;
+.home .card p{
+    text-align: center;
 }
 
-.home .recently-played .card{
-    width: calc(100% / 6 - 10px);
-    max-width: 200px;
-    min-width: 150px;
-    padding: 10px;
+.home .card p:first-child{
+    color: var(--text-white-col);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 10px 0;
 }
-
 
 /* FOOTER */
 footer{
     background-color: var(--footer-col);
     height: 100px;
+}
+
+footer img{
+    width: 50px;
 }
 
 footer .now-playing{
@@ -108,6 +155,7 @@ footer .now-playing .card-img img{
 }
 
 footer .now-playing .artist-name{
+    color: var(--text-white-col);
     font-weight: 700;
     font-size: 0.75rem;
 }
@@ -144,6 +192,7 @@ footer .playing-control .control-button > i:not(i:nth-child(3)){
 footer .playing-control .control-time div:nth-child(odd){
     font-size: 0.65rem;
 }
+
 footer .varius-control{
     width: 200px;
     height: 100%;
@@ -155,8 +204,18 @@ footer .varius-control > div{
 }
 /* SOLUZIONI RESPONSIVE */
 /* first step medium  */
+@media screen and (max-width: 1100px) {
+    .card{
+        width: calc(100% / 4);
+    }
+}
 
 /* second step small */
+@media screen and (max-width: 740px) {
+    .card{
+        width: calc(100% / 2);
+    }
+}
 
 /* third step smaller */
 @media screen and (max-width: 600px) {
@@ -192,6 +251,10 @@ footer .varius-control > div{
     }
 
     aside nav span.aside-text{
+        display: none;
+    }
+
+    aside .user::before{
         display: none;
     }
 

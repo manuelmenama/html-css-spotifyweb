@@ -1,8 +1,9 @@
 :root {
     /* text & object */
-    --text-col: #a3a3a3;
+    --text-col: #777777;
     --text-active-col: #fff;
     --object-col-white: #fff;
+    --text-white-col: #fff;
     --object-col-gray: #a3a3a3;
     --bar-color-empty: #5a5a5a;
     /* active element */
@@ -26,7 +27,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-col);
     background-color: var(--main-col);
     font-weight: 600;
@@ -119,15 +120,26 @@ img{
     border-radius: 2px;
 }
 
-
 .album-img{
     width: calc(100%);
     height: auto;
 }
 
+.card{
+    width: calc(100% / 6);
+    max-width: 200px;
+    min-width: 134px;
+    padding: 5px;
+}
+
 /* UI VARIATION */
 .adaptive-bar{
     width: 80%;
+}
+
+.rounded-img-big{
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* ROUNDED IMAGE */
