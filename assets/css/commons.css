@@ -195,6 +195,21 @@ a:hover{
     width: 35%;
 }
 
+.empty-bar:hover .fill-bar{
+    background-color: var(--element-active);
+}
+
+.empty-bar:hover .circle-cursor::after{
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--object-col-white);
+    position: absolute;
+    top: -2px;
+    left: calc(30% - 4px);
+}
+
 /* EFFETTO CARD IN STYLE.CSS */
 
 /* VARIATION */
