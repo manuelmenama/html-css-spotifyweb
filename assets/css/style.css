@@ -25,6 +25,7 @@ main img{
 }
 
 /* aside */
+/* aside navigator */
 aside{
     width: 200px;
     background-color: var(--black-col);
@@ -36,6 +37,7 @@ aside nav.top{
     margin: 0 -12px;
 }
 
+/* aside playlist */
 aside nav.bottom ul{
     height: calc(40vh - 100px);
     min-height: 90px;
@@ -55,6 +57,7 @@ aside nav.bottom > div i{
     padding-right: 8px;
 }
 
+/* bottom aside */
 aside .last-nav{
     height: 100%;
     padding-bottom: 10px;
@@ -88,7 +91,6 @@ aside .user::before{
 }
 
 /* home */
-
 .home{
     width: calc(100vw - 200px);
     height: calc(100vh - 100px);
@@ -118,10 +120,6 @@ aside .user::before{
     gap: 20px;
     font-size: 0.7rem;
     padding: 25px 0;
-}
-
-.home .position{
-    position: relative;
 }
 
 .home .position i{
@@ -293,6 +291,4 @@ footer .varius-control > div{
     .home{
         width: calc(100% - 50px);
     }
-
-
 }
